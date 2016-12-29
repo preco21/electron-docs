@@ -7,5 +7,4 @@ cache:
     - $HOME/.npm
     - node_modules
 script:
-  - chmod a+x build.sh
   - bash ./deploy.sh
