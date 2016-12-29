@@ -47,7 +47,7 @@ fi
 
 # Commit all changes
 # The delta will show diffs between new and old versions.
-git add --all
+git add --all .
 git commit -m "Deploy to GitBook: ${SHA}"
 
 # Get the deploy key from Travis's environment variables
