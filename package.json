@@ -1,0 +1,45 @@
+{
+  "name": "electron-docs",
+  "version": "0.1.0",
+  "description": "Unofficial Electron docs for publishing on GitBook",
+  "author": "Plusb Preco <plusb21@gmail.com>",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "start": "node .",
+    "test": "npm run lint",
+    "lint": "eslint .",
+    "build": "babel --out-dir lib src",
+    "dev": "nodemon --exec node --require babel-register -- src/index.js",
+    "clean": "rimraf lib"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/preco21/electron-docs#readme",
+  "repository": "preco21/electron-docs",
+  "bugs": {
+    "url": "https://github.com/preco21/electron-docs/issues"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "del": "^2.2.2",
+    "download": "^5.0.2",
+    "fs-extra": "^1.0.0",
+    "ncp": "^2.0.0",
+    "pify": "^2.3.0",
+    "tmp": "^0.0.31"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "eslint": "^3.12.2",
+    "eslint-config-prev": "^3.3.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.5.4"
+  }
+}
