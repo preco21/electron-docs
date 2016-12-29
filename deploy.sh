@@ -40,14 +40,14 @@ git config user.name "$COMMIT_AUTHOR_NAME"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 # Check delta changes for source branch
-if [ -z `git diff --exit-code` ]; then
+if [ $(git status --porcelain | wc -l) -lt 1 ]; then
     echo "No changes to the output on this push; exiting."
     exit 0
 fi
 
 # Commit all changes
 # The delta will show diffs between new and old versions.
-git add --all .
+git add -A .
 git commit -m "Deploy to GitBook: ${SHA}"
 
 # Get the deploy key from Travis's environment variables
