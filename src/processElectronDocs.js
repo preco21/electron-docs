@@ -4,19 +4,19 @@ import fetch from './utils/fetch';
 import copy from './utils/copy';
 import rename from './utils/rename';
 
-async function docs(repo, copyTarget, filterTarget) {
+async function processElectronDocs(repo, copyTarget, renameTarget) {
   const {path: tempPath, cleanup} = await getTemp();
 
   try {
     const [{path: targetPath}] = await fetch(repo, tempPath);
 
     await copy(join(tempPath, targetPath), copyTarget);
-    await rename(filterTarget);
+    await rename(renameTarget);
   } finally {
     cleanup();
   }
 }
 
 export {
-  docs as default,
+  processElectronDocs as default,
 };

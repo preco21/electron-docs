@@ -1,15 +1,24 @@
 import 'babel-polyfill';
-import clean from './clean';
-import docs from './docs';
-import filterConfig from './config/filter';
+import clean from './utils/clean';
+import copy from './utils/copy';
+import processElectronDocs from './processElectronDocs';
 import copyConfig from './config/copy';
+import renameConfig from './config/rename';
+import contentConfig from './config/content';
 import sharedConfig from './config/shared';
 
 (async () => {
   try {
-    await clean();
-    await docs(sharedConfig.repo, copyConfig.target, filterConfig.target);
+    // Clean output directory
+    await clean(sharedConfig.cleanTarget);
+
+    // Process Electron docs (currenty only Korean)
+    await processElectronDocs(sharedConfig.repo, copyConfig.target, renameConfig.target);
+
+    // Copy extra content
+    await copy(contentConfig.target);
   } catch (err) {
-    console.error(err);
+    console.error(err); // eslint-disable-line no-console
+    process.exit(1);
   }
 })();

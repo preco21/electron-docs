@@ -4,7 +4,7 @@ import pify from 'pify';
 const renameAsync = pify(_rename);
 
 function rename(pick) {
-  return Promise.all(pick.map(({target, replace}) => renameAsync(target, replace)));
+  return Promise.all(pick.map(({src, dest}) => renameAsync(src, dest)));
 }
 
 export {
