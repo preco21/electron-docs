@@ -16,7 +16,7 @@ import sharedConfig from './config/shared';
     await processElectronDocs(sharedConfig.repo, copyConfig.target, renameConfig.target);
 
     // Copy extra content
-    await copy(contentConfig.target);
+    await copy(process.cwd(), contentConfig.target);
   } catch (err) {
     console.error(err); // eslint-disable-line no-console
     process.exit(1);
