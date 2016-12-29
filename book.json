@@ -1,6 +1,4 @@
 {
-  "title": "Electron 한국어 참조 문서",
-  "language": "ko",
   "plugins": ["github", "anchors", "advanced-emoji"],
   "pluginsConfig": {
     "github": {
