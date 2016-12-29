@@ -26,7 +26,7 @@ cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
-# Clean out existing contents
+# Clean out existing content
 rm -rf out/**/* || exit 0
 
 # Run build script
