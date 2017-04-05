@@ -10,7 +10,9 @@ import sharedConfig from './config/shared';
 (async () => {
   try {
     // Clean output directory
-    await clean(sharedConfig.cleanTarget);
+    if (!process.env.DEPLOY_KEY) {
+      await clean(sharedConfig.cleanTarget);
+    }
 
     // Process Electron docs (currenty only Korean)
     await processElectronDocs(sharedConfig.repo, copyConfig.target, renameConfig.target);
