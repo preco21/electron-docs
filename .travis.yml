@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - node
 cache:
+  yarn: true
   directories:
-    - $HOME/.npm
     - node_modules
 script:
   - bash ./deploy.sh
