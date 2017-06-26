@@ -8,8 +8,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "start": "node .",
-    "test": "npm run lint",
-    "lint": "eslint .",
+    "test": "eslint .",
     "build": "babel --out-dir lib src",
     "dev": "nodemon --exec node --require babel-register -- src/index.js",
     "clean": "rimraf lib"
