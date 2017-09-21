@@ -1,7 +1,7 @@
 # [![Electron Logo](http://electron.atom.io/images/electron-logo.svg)](http://electron.atom.io/)
 
-[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg?style=flat-square)](https://github.com/preco21/eslint-config-prev)
-[![Build Status](https://img.shields.io/travis/preco21/electron-docs/source.svg?style=flat-square)](https://travis-ci.org/preco21/electron-docs)
+[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg)](https://github.com/preco21/eslint-config-prev)
+[![Build Status](https://travis-ci.org/preco21/electron-docs.svg?branch=source)](https://travis-ci.org/preco21/electron-docs)
 
 **This book currently only supports Korean translation of Electron docs. If you are looking for original docs, please check [upstream docs](https://github.com/electron/electron/blob/master/docs/README.md). Original English docs and other translations will be added later!**
 
@@ -31,7 +31,7 @@ npm install --global electron
 
 한국 커뮤니티로는 [`electron-kr`][electron-kr]이 있습니다.
 
-[awesome-electron](https://github.com/sindresorhus/awesome-electron) 프로젝트에 커뮤니티가 운영중인 유용한 예시 어플리케이션과 도구, 리소스가 있으니 참고하기 바랍니다.
+[awesome-electron](https://github.com/sindresorhus/awesome-electron) 프로젝트에 커뮤니티가 운영중인 유용한 예시 어플리케이션과 도구, 리소스가 있으니 참고해주세요.
 
 ## 문제 해결
 
