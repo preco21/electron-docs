@@ -31,7 +31,7 @@ npm install --global electron
 
 한국 커뮤니티로는 [`electron-kr`][electron-kr]이 있습니다.
 
-[awesome-electron](https://github.com/sindresorhus/awesome-electron) 프로젝트에 커뮤니티가 운영중인 유용한 예시 어플리케이션과 도구, 리소스가 있으니 참고하기 바랍니다.
+[awesome-electron](https://github.com/sindresorhus/awesome-electron) 프로젝트에 커뮤니티가 운영중인 유용한 예시 어플리케이션과 도구, 리소스가 있으니 참고해주세요.
 
 ## 문제 해결
 
