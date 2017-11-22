@@ -1,6 +1,6 @@
 ---
 
-DEPRECATED | This repository has been deprecated in favor of multilangual support of the [Electron official documentation](https://electronjs.org/docs).
+**DEPRECATED** | This repository has been deprecated in favor of multilangual support of the [Electron official documentation](https://electronjs.org/docs).
 
 ---
 
