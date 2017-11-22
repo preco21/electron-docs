@@ -1,3 +1,9 @@
+---
+
+DEPRECATED | This repository has been deprecated in favor of multilangual support of the [Electron official documentation](https://electronjs.org/docs).
+
+---
+
 # [![Electron Logo](http://electron.atom.io/images/electron-logo.svg)](http://electron.atom.io/)
 
 [![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg)](https://github.com/preco21/eslint-config-prev)
